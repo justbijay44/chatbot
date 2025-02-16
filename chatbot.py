@@ -83,7 +83,6 @@ def get_response():
 
     response = random.choice(fallback_responses) if best_match_index == -1 else answers[best_match_index]
 
-    # print(f"jerryBOT: {answers[best_match_index]}")
     return jsonify({"response": response})
 
 #To add questions and answers
